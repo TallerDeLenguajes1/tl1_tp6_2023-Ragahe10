@@ -10,14 +10,11 @@
 
 //EJERCICIO 1
 
-string entrada;
 int num, aux = 0, aux2; 
 bool resp;
 
 Console.Write("Ingrese un numero ");
-entrada = Console.ReadLine();
-
-resp = int.TryParse(entrada, out num);
+resp = int.TryParse(Console.ReadLine(), out num);
 
 if(resp){
     if(num > 0){
