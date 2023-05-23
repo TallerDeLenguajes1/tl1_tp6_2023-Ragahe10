@@ -37,5 +37,17 @@
 //FIN EJERCICIO 1
 
 //EJERCICIO 4
-
+Console.WriteLine("Ingrese una frase o palabra:");
+string? cad1 = Console.ReadLine();
+if(cad1!= null){
+    Console.WriteLine("La longitud de: \'"+cad1+"\' es: "+cad1.Length);
+    Console.WriteLine("Ingrese otra frase o palabra:");
+    string? cad2 = Console.ReadLine();
+    if(cad2!= null){
+        cad2 = cad1 +" "+ cad2;
+        Console.WriteLine(cad2);
+        string subcad = cad2.Substring(3);
+        Console.WriteLine("subcadena: "+subcad);
+    }
+}
 //FIN EJERCICIO 4
